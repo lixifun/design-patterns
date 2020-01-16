@@ -8,6 +8,6 @@ public class NBAObserver extends Observer {
 
     @Override
     public void update() {
-        System.out.println(String.format("%s %S 关闭 NBA 直播，继续工作!", sub.getAction(), name));
+        System.out.println(String.format("%s %s 关闭 NBA 直播，继续工作!", sub.getAction(), name));
     }
 }
