@@ -7,7 +7,7 @@ public class ConcreteMediator extends Mediator {
 
     @Override
     public void send(String message, Colleague colleague) {
-        if (colleague == concreteColleague1) {
+        if (colleague.equals(concreteColleague1)) {
             concreteColleague2.notifyMethod(message);
         } else {
             concreteColleague1.notifyMethod(message);
